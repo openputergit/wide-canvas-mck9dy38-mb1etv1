@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIBIR - Indian Initiative on Behavioral Insights Research</title>
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #006d77 0%, #83c5be 100%);
+        }
+        
+        .nav-link:hover {
+            color: #83c5be;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-[#006d77]">IIBIR</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#research" class="nav-link">Research</a>
+                    <a href="#interventions" class="nav-link">Interventions</a>
+                    <a href="#corporate" class="nav-link">Corporate</a>
+                    <a href="#capacity" class="nav-link">Capacity Building</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 nav-link">Home</a>
+                <a href="#about" class="block px-3 py-2 nav-link">About</a>
+                <a href="#research" class="block px-3 py-2 nav-link">Research</a>
+                <a href="#interventions" class="block px-3 py-2 nav-link">Interventions</a>
+                <a href="#corporate" class="block px-3 py-2 nav-link">Corporate</a>
+                <a href="#capacity" class="block px-3 py-2 nav-link">Capacity Building</a>
+                <a href="#contact" class="block px-3 py-2 nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Pioneering Behavioral Insights for a Better Future
+                </h1>
+                <p class="text-xl text-white opacity-90 mb-8 max-w-3xl mx-auto">
+                    We integrate psychological insights with economic and policy frameworks to design evidence-based interventions that foster positive behavioral change.
+                </p>
+                <a href="#contact" class="bg-white text-[#006d77] px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
+                    Get Involved
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-[#006d77] mb-4">Our Vision</h3>
+                    <p class="text-gray-700">
+                        To redefine human behavior for societal progress by leveraging deep psychological insights and data-driven strategies.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-[#006d77] mb-4">Our Mission</h3>
+                    <p class="text-gray-700">
+                        To develop, test, and scale behavioral interventions that enhance public policy, corporate strategies, and community welfare, ensuring inclusivity and sustainability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-[#006d77] mb-12">What We Do</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="bi bi-search text-4xl text-[#006d77] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Research</h3>
+                    <p class="text-gray-600">Conduct cutting-edge research to understand human behavior and decision-making.</p>
+                </div>
+                <!-- Add more service cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-[#006d77] mb-12">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#006d77]" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#006d77]" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Message</label>
+                            <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#006d77]" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#006d77] text-white py-3 rounded-lg hover:bg-opacity-90 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Address</h3>
+                            <p class="text-gray-600">H/No. 2, Type V, Income Tax Colony, Karkunj, Sikandra, Agra, U.P. 282007, India</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Email</h3>
+                            <p class="text-gray-600">info@behaviouralinsightsindia.org</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Phone</h3>
+                            <p class="text-gray-600">+91 85069818</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact form handling
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you soon!');
+            contactForm.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
